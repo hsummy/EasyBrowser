@@ -8,18 +8,58 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate
+{
+ 
+ @IBOutlet weak var webView: UIWebView!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+//    {
+//        let url = URL (string: "http://developer.apple.com")
+//        let requestObject = URLRequest(url: url!)
+//        webView.loadRequest(requestObject)
+//        return true
+//    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        
+        textField.resignFirstResponder()
+        let website = textField.text
+        
+        let url = URL (string: website!)
+        let requestObject = URLRequest(url: url!)
+        self.webView.loadRequest(requestObject)
+        
+        return true
+    }
+    
+    
+//Mark = IBACTIONS
+    
+    
+    
+//    @IBAction func openPage(_ sender: Any)
+//    {
+//        let url = URL (string: "http://developer.apple.com")
+//        let requestObject = URLRequest(url: url!)
+//        webView.loadRequest(requestObject)
+//
+//       // UIApplication.shared.open(NSURL(string:"http://developer.apple.com") as! URL, options: [:], completionHandler: nil)
+//    }
 }
 

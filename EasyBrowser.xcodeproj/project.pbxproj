@@ -12,6 +12,7 @@
 		E3B762881E0B07A800A7EC9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B762861E0B07A800A7EC9B /* Main.storyboard */; };
 		E3B7628A1E0B07A800A7EC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B762891E0B07A800A7EC9B /* Assets.xcassets */; };
 		E3B7628D1E0B07A800A7EC9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B7628B1E0B07A800A7EC9B /* LaunchScreen.storyboard */; };
+		E3B762991E0B4B4300A7EC9B /* BrowserWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B762981E0B4B4200A7EC9B /* BrowserWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E3B762891E0B07A800A7EC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B7628C1E0B07A800A7EC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B7628E1E0B07A800A7EC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B762981E0B4B4200A7EC9B /* BrowserWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowserWebView.swift; path = ../BrowserWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B762821E0B07A800A7EC9B /* AppDelegate.swift */,
+				E3B762981E0B4B4200A7EC9B /* BrowserWebView.swift */,
 				E3B762841E0B07A800A7EC9B /* ViewController.swift */,
 				E3B762861E0B07A800A7EC9B /* Main.storyboard */,
 				E3B762891E0B07A800A7EC9B /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B762991E0B4B4300A7EC9B /* BrowserWebView.swift in Sources */,
 				E3B762851E0B07A800A7EC9B /* ViewController.swift in Sources */,
 				E3B762831E0B07A800A7EC9B /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +301,7 @@
 				E3B762931E0B07A800A7EC9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
